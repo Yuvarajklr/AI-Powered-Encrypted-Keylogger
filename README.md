@@ -36,15 +36,15 @@ source tfenv/bin/activate
 
     Start logging:
 
-python cli_keylogger.py --start  
+python3.9 cli_keylogger.py --start  
 
     Analyze logs:
 
-python cli_keylogger.py --analyze  
+python3.9 cli_keylogger.py --analyze  
 
     Decrypt logs:
 
-python cli_keylogger.py --decrypt  
+python3.9 cli_keylogger.py --decrypt  
 
 📦 Key Files Explained:
 
