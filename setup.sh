@@ -2,19 +2,15 @@
 
 echo "[+] Setting up virtual environment..."
 python3.9 -m venv tfenv
-
 source tfenv/bin/activate
 
 echo "[+] Installing dependencies from requirements.txt..."
-
-if [ ! -f "requirements.txt" ]; then
-    echo "[!] Error: requirements.txt not found!"
-    echo "    Make sure you're in the correct project folder."
-    deactivate
-    exit 1
-fi
-
-pip install -r requirements.txt
+pip install --upgrade pip
+python3.9 -m pip install pynput
+python3.9 -m pip install cryptography
+pip install numpy==1.23.5
+pip install tensorflow==2.10.0
 
 echo "[✓] Setup complete. You can now run: source tfenv/bin/activate && python3.9 cli_keylogger.py --start"
+
 
