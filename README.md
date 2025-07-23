@@ -13,7 +13,32 @@ This is a Python-based CLI keylogger that uses an AI model (LSTM) to classify us
   - `behavior_key.key` – Secret encryption key
 - 📁 All logs saved in one place
 - 🔧 Simple CLI interface with `--start`, `--analyze`, and `--decrypt`
-- ⚙️ `setup.sh` installs dependencies and sets up environment
+- ⚙️ `setup.sh` installs dependencies and sets up environment.
+
+---
+
+## 💻 Install Python 3.9 (if not installed)
+
+If your system doesn’t have Python 3.9 installed, follow these steps:
+
+```bash
+sudo apt update
+sudo apt install -y build-essential libssl-dev zlib1g-dev
+
+cd /usr/src
+sudo wget https://www.python.org/ftp/python/3.9.18/Python-3.9.18.tgz
+sudo tar xzf Python-3.9.18.tgz
+cd Python-3.9.18
+sudo ./configure --enable-optimizations
+sudo make -j$(nproc)
+sudo make altinstall
+
+python3.9 --version
+
+❓ Why Python 3.9?
+
+    This tool requires Python 3.9 because the AI model and some libraries (like TensorFlow/Keras) used in this project are tested and stable with Python 3.9.
+    Using other versions (like 3.11 or 3.12) may cause compatibility issues with tensorflow, pynput, or cryptography.
 
 ---
 
