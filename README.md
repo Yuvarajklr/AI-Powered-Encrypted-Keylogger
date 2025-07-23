@@ -48,7 +48,7 @@ AI-Powered-Encrypted-Keylogger/
 ├── cli_keylogger.py # Main CLI tool
 ├── behavior_model.h5 # LSTM model for classification
 ├── setup.sh # Auto setup script
-├── requirements.txt # Required Python packages
+├── [requirements.txt](https://github.com/Yuvarajklr/AI-Powered-Encrypted-Keylogger/blob/main/requirement.txt) # Required Python packages
 ├── README.md # This file
 ├── LICENSE
 ├── .gitignore
