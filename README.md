@@ -89,4 +89,4 @@ Then press ESC key to stop logging.
 
 📄 License
 
-MIT License. See LICENSE for more details.
+MIT License. See [LICENSE](https://github.com/Yuvarajklr/AI-Powered-Encrypted-Keylogger/blob/main/LICENSE) for more details.
