@@ -1,50 +1,88 @@
-🔐 AI-Powered Encrypted Keylogger
-This project is an AI-enhanced keylogger that monitors user keystroke behavior and classifies the input as a command, password, URL, or general text using an LSTM-based neural network. The logs are encrypted using Fernet symmetric encryption for secure storage.
-📌 Features: Keystroke logging using pynput, Typing behavior analysis using LSTM deep learning model, Encrypted logging with cryptography.fernet, CLI tool for logging, analysis, and decryption, Simple and secure Python implementation.
-🛠 Requirements: Python 3.9+, Linux-based OS (Kali Linux tested), Install dependencies with:
+# 🔐 AI-Powered Encrypted Keylogger (CLI Tool)
 
-open therminal:
+This is a Python-based CLI keylogger that uses an AI model (LSTM) to classify user keystrokes into categories like `Password`, `Command`, `URL`, and `General`. It also encrypts the logs using Fernet encryption and stores them securely.
 
-sudo apt update  
-sudo apt install python3.9 python3.9-venv python3-pip  
-python3.9 -m venv tfenv  
-source tfenv/bin/activate  
-pip install -r requirements.txt  
+## ✨ Features
 
-🧾 Create a requirements.txt file with:
+- ✅ Keystroke logging with timestamp
+- 🧠 AI behavior prediction using a pre-trained LSTM model (`behavior_model.h5`)
+- 🔐 Secure encryption using `cryptography.fernet`
+- 📄 Generates:
+  - `behavior_log.txt` – Plain log
+  - `behavior_encrypted_log.bin` – Encrypted log
+  - `behavior_key.key` – Secret encryption key
+- 📁 All logs saved in one place
+- 🔧 Simple CLI interface with `--start`, `--analyze`, and `--decrypt`
+- ⚙️ `setup.sh` installs dependencies and sets up environment
 
-pynput  
-cryptography  
-numpy  
-tensorflow==2.13.0  
+---
 
-📁 Project Structure:
-AI_Encrypted_Keylogger_Project/
-├── cli_keylogger.py — Main script to run the logger
-├── behavior_model.h5 — Pre-trained LSTM model
-├── behavior_log.txt — Plain logs
-├── behavior_encrypted_log.bin — Encrypted logs
-├── behavior_key.key — Fernet encryption key
-├── requirements.txt — Python dependencies
-└── README.md — Project documentation
+## 📂 File Structure
 
-🚀 How to Run:
+AI-Powered-Encrypted-Keylogger/
+├── cli_keylogger.py # Main CLI tool
+├── behavior_model.h5 # LSTM model for classification
+├── setup.sh # Auto setup script
+├── requirements.txt # Required Python packages
+├── README.md # This file
+├── LICENSE
+├── .gitignore
+├── logs/
+│ ├── behavior_log.txt # Human-readable log
+│ ├── behavior_encrypted_log.bin # Encrypted log
+│ └── behavior_key.key # Fernet key file
 
-    Activate virtual environment:
 
-source tfenv/bin/activate  
+---
 
-    Start logging:
+## 🚀 Quick Start
 
-python3.9 cli_keylogger.py --start  
+### 🐧 On Kali Linux or any Linux system:
 
-    Analyze logs:
+```bash
+git clone https://github.com/Yuvarajklr/AI-Powered-Encrypted-Keylogger.git
+cd AI-Powered-Encrypted-Keylogger
+bash setup.sh
 
-python3.9 cli_keylogger.py --analyze  
+    This will create a virtual environment, install all required dependencies, and get the tool ready.
 
-    Decrypt logs:
+📌 Usage
 
-python3.9 cli_keylogger.py --decrypt  
+    Always activate the virtual environment first:
+
+source tfenv/bin/activate
+
+▶ Start Keylogger
+
+python3.9 cli_keylogger.py --start
+
+    Press ESC to stop logging.
+
+    Logs saved in logs/ folder.
+
+📊 Analyze Logs
+
+python3.9 cli_keylogger.py --analyze
+
+🔓 Decrypt Logs
+
+python3.9 cli_keylogger.py --decrypt
+
+    Decrypted output will be printed in terminal using behavior_key.key.
+
+📦 Dependencies
+
+    pynput
+
+    cryptography
+
+    numpy
+
+    tensorflow
+
+    keras
+
+These are automatically installed using setup.sh.
 
 📦 Key Files Explained:
 
