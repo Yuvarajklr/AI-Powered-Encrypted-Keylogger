@@ -1,0 +1,5 @@
+pynput
+cryptography
+numpy
+tensorflow==2.13.0
+
