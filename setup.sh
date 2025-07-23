@@ -11,6 +11,6 @@ python3.9 -m pip install cryptography
 pip install numpy==1.23.5
 pip install tensorflow==2.10.0
 
-echo "[✓] Setup complete. You can now run: source tfenv/bin/activate && python3.9 cli_keylogger.py --start"
+echo "[✓] Setup complete. You can now run: source tfenv/bin/activate && python3.9 clic_keylogger.py --start"
 
 
