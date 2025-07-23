@@ -136,19 +136,19 @@ Then press ESC key to stop logging.
 
 📎 Notes:
 
-    -Intended only for ethical and educational use
+    - Intended only for ethical and educational use
 
-    -Do not deploy without permission
+    - Do not deploy without permission
 
-    -Logs are securely stored and classified by AI
+    - Logs are securely stored and classified by AI
 
 📚 Learn More:
 
-    -TensorFlow: https://www.tensorflow.org/
+    - TensorFlow: https://www.tensorflow.org/
 
-    -Cryptography: https://cryptography.io/en/latest/fernet/
+    - Cryptography: https://cryptography.io/en/latest/fernet/
 
-    pynput: https://pynput.readthedocs.io/en/latest/
+    - pynput: https://pynput.readthedocs.io/en/latest/
 
 📄 License
 
