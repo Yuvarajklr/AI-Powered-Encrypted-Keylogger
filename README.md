@@ -48,7 +48,7 @@ AI-Powered-Encrypted-Keylogger/
 ├── cli_keylogger.py # Main CLI tool
 ├── behavior_model.h5 # LSTM model for classification
 ├── setup.sh # Auto setup script
-├── [requirements.txt](https://github.com/Yuvarajklr/AI-Powered-Encrypted-Keylogger/blob/main/requirement.txt) # Required Python packages
+├── requirements.txt # Required Python packages
 ├── README.md # This file
 ├── LICENSE
 ├── .gitignore
@@ -75,51 +75,51 @@ bash setup.sh
 
     Always activate the virtual environment first:
 
-source tfenv/bin/activate
+   * source tfenv/bin/activate
 
 ▶ Start Keylogger
 
-python3.9 cli_keylogger.py --start
+  * python3.9 clic_keylogger.py --start
 
-    Press ESC to stop logging.
+    - Press ESC to stop logging.
 
-    Logs saved in logs/ folder.
+    - Logs saved in logs/ folder.
 
 📊 Analyze Logs
 
-python3.9 cli_keylogger.py --analyze
+python3.9 clic_keylogger.py --analyze
 
 🔓 Decrypt Logs
 
-python3.9 cli_keylogger.py --decrypt
+python3.9 clic_keylogger.py --decrypt
 
     Decrypted output will be printed in terminal using behavior_key.key.
 
 📦 Dependencies
 
-    pynput
+    - pynput
 
-    cryptography
+    - cryptography
 
-    numpy
+    - numpy
 
-    tensorflow
+    - tensorflow
 
-    keras
+     - keras
 
 These are automatically installed using setup.sh.
 
 📦 Key Files Explained:
 
-    cli_keylogger.py: The main script with CLI options
+    - clic_keylogger.py: The main script with CLI options
 
-    behavior_model.h5: LSTM model for typing behavior prediction
+    - behavior_model.h5: LSTM model for typing behavior prediction
 
-    behavior_log.txt: Human-readable log
+    - behavior_log.txt: Human-readable log
 
-    behavior_encrypted_log.bin: Encrypted log
+    - behavior_encrypted_log.bin: Encrypted log
 
-    behavior_key.key: Generated key used by Fernet encryption
+    - behavior_key.key: Generated key used by Fernet encryption
 
 🧠 AI Typing Behavior Classification:
 The AI model uses typing delay patterns to classify input into categories like "Password", "Command", "URL", or "General". Helps monitor behavior patterns intelligently.
@@ -129,24 +129,24 @@ All logs are encrypted before storage using Fernet. Encryption key is saved as b
 
 👨‍💻 Example Usage:
 
-source tfenv/bin/activate  
-python cli_keylogger.py --start  
+* source tfenv/bin/activate  
+* python clic_keylogger.py --start  
 
 Then press ESC key to stop logging.
 
 📎 Notes:
 
-    Intended only for ethical and educational use
+    -Intended only for ethical and educational use
 
-    Do not deploy without permission
+    -Do not deploy without permission
 
-    Logs are securely stored and classified by AI
+    -Logs are securely stored and classified by AI
 
 📚 Learn More:
 
-    TensorFlow: https://www.tensorflow.org/
+    -TensorFlow: https://www.tensorflow.org/
 
-    Cryptography: https://cryptography.io/en/latest/fernet/
+    -Cryptography: https://cryptography.io/en/latest/fernet/
 
     pynput: https://pynput.readthedocs.io/en/latest/
 
