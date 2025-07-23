@@ -119,7 +119,7 @@ Then press ESC key to stop logging.
 
 📚 Learn More:
 
-    TensorFlow: [https://www.tensorflow.org/](https://www.tensorflow.org/)
+    TensorFlow: https://www.tensorflow.org/
 
     Cryptography: https://cryptography.io/en/latest/fernet/
 
