@@ -2,6 +2,7 @@
 
 This is a Python-based CLI keylogger that uses an AI model (LSTM) to classify user keystrokes into categories like `Password`, `Command`, `URL`, and `General`. It also encrypts the logs using Fernet encryption and stores them securely.
 
+
 ## ✨ Features
 
 - ✅ Keystroke logging with timestamp
@@ -141,6 +142,12 @@ Then press ESC key to stop logging.
     - Do not deploy without permission
 
     - Logs are securely stored and classified by AI
+
+⚠️ VirtualBox & TensorFlow Issue
+
+    TensorFlow may not work inside VirtualBox if your virtual machine doesn't support AVX (Advanced Vector Extensions) instructions, which TensorFlow relies on.
+
+    Most official builds of TensorFlow require AVX, but many virtual environments do not pass AVX support through.
 
 📚 Learn More:
 
