@@ -9,7 +9,7 @@ pip install --upgrade pip
 python3.9 -m pip install pynput
 python3.9 -m pip install cryptography
 pip install numpy==1.23.5
-python3.9 -m pip install tensorflow-cpu==2.11
+pip install tensorflow==2.10.0
 
 
 echo "[✓] Setup complete. You can now run: source tfenv/bin/activate && python3.9 clic_keylogger.py --start"
